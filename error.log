@@ -1,0 +1,167 @@
+ready - started server on 0.0.0.0:3000, url: http://localhost:3000
+info  - Using webpack 5. Reason: Enabled by default https://nextjs.org/docs/messages/webpack5
+event - compiled successfully
+event - build page: /
+wait  - compiling...
+event - compiled successfully
+event - build page: /quiz
+wait  - compiling...
+event - compiled successfully
+error - unhandledRejection: Error: connect ECONNREFUSED 127.0.0.1:80
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1146:16) {
+  errno: -61,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 80,
+  config: {
+    url: './public/quiz.json',
+    method: 'get',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'User-Agent': 'axios/0.21.4'
+    },
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      constructed: true,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      [Symbol(kOnFinished)]: []
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      protocol: 'http:',
+      path: './public/quiz.json',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: null,
+      port: null,
+      nativeProtocols: [Object],
+      pathname: './public/quiz.json'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [Socket],
+      _header: 'GET ./public/quiz.json HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'User-Agent: axios/0.21.4\r\n' +
+        'Host: localhost\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: './public/quiz.json',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'localhost',
+      protocol: 'http:',
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http:./public/quiz.json',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+event - build page: /next/dist/pages/_error
+wait  - compiling...
+event - compiled successfully
