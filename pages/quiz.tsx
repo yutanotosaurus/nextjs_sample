@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 const Quiz: NextPage = () =>{
     const [data, setData] = useState(null);
-    const url = "./public/quiz.json";
+    const url = "/quiz.json";
     axios.get(url).then(res => {
         //setData(res.data);
         console.log(data);
