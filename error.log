@@ -1,21 +1,11 @@
-ready - started server on 0.0.0.0:3000, url: http://localhost:3000
-info  - Using webpack 5. Reason: Enabled by default https://nextjs.org/docs/messages/webpack5
-event - compiled successfully
-event - build page: /
-wait  - compiling...
-event - compiled successfully
-event - build page: /quiz
-wait  - compiling...
-event - compiled successfully
-error - unhandledRejection: Error: connect ECONNREFUSED 127.0.0.1:80
-    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1146:16) {
+   at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1146:16) {
   errno: -61,
   code: 'ECONNREFUSED',
   syscall: 'connect',
   address: '127.0.0.1',
   port: 80,
   config: {
-    url: './public/quiz.json',
+    url: '/quiz.json',
     method: 'get',
     headers: {
       Accept: 'application/json, text/plain, */*',
@@ -83,7 +73,7 @@ error - unhandledRejection: Error: connect ECONNREFUSED 127.0.0.1:80
       maxRedirects: 21,
       maxBodyLength: 10485760,
       protocol: 'http:',
-      path: './public/quiz.json',
+      path: '/quiz.json',
       method: 'GET',
       headers: [Object],
       agent: undefined,
@@ -92,7 +82,7 @@ error - unhandledRejection: Error: connect ECONNREFUSED 127.0.0.1:80
       hostname: null,
       port: null,
       nativeProtocols: [Object],
-      pathname: './public/quiz.json'
+      pathname: '/quiz.json'
     },
     _ended: true,
     _ending: true,
@@ -125,7 +115,7 @@ error - unhandledRejection: Error: connect ECONNREFUSED 127.0.0.1:80
       _headerSent: true,
       _closed: false,
       socket: [Socket],
-      _header: 'GET ./public/quiz.json HTTP/1.1\r\n' +
+      _header: 'GET /quiz.json HTTP/1.1\r\n' +
         'Accept: application/json, text/plain, */*\r\n' +
         'User-Agent: axios/0.21.4\r\n' +
         'Host: localhost\r\n' +
@@ -138,7 +128,7 @@ error - unhandledRejection: Error: connect ECONNREFUSED 127.0.0.1:80
       method: 'GET',
       maxHeaderSize: undefined,
       insecureHTTPParser: undefined,
-      path: './public/quiz.json',
+      path: '/quiz.json',
       _ended: false,
       res: null,
       aborted: false,
@@ -155,13 +145,9 @@ error - unhandledRejection: Error: connect ECONNREFUSED 127.0.0.1:80
       [Symbol(corked)]: 0,
       [Symbol(kOutHeaders)]: [Object: null prototype]
     },
-    _currentUrl: 'http:./public/quiz.json',
+    _currentUrl: 'http:/quiz.json',
     [Symbol(kCapture)]: false
   },
   response: undefined,
   isAxiosError: true,
   toJSON: [Function: toJSON]
-}
-event - build page: /next/dist/pages/_error
-wait  - compiling...
-event - compiled successfully

@@ -5,12 +5,11 @@ import axios from 'axios'
 import { useState } from 'react';
 
 const Quiz: NextPage = () =>{
-    const [data, setData] = useState(null);
-    const url = "./public/quiz.json";
+    const [data, setData] = useState('');
+    const url = "/quiz.json";
     axios.get(url).then(res => {
-        //setData(res.data);
-        console.log(data);
-        console.log(res.data);
+        //console.log(res.data);
+        setData(res.data);
       });
     return(
         <div className={styles.container}>
