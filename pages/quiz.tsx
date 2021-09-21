@@ -4,7 +4,6 @@ import styles from '../styles/Home.module.css'
 import axios from 'axios'
 import { useState } from 'react'
 
-<<<<<<< HEAD
 const Quiz: NextPage = () =>{
     const [data, setData] = useState('');
     const url = "/quiz.json";
@@ -13,17 +12,6 @@ const Quiz: NextPage = () =>{
         setData(res.data);
       });
     return(
-=======
-const Quiz: NextPage = () => {
-    const [data, setData] = useState(null)
-    const url = './public/quiz.json'
-    axios.get(url).then((res) => {
-        //setData(res.data);
-        console.log(data)
-        console.log(res.data)
-    })
-    return (
->>>>>>> 489381df708e1294436121cc56285f09c30b9dbf
         <div className={styles.container}>
             <Head>
                 <title>クイズ画面</title>
